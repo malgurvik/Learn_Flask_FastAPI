@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Магазин{% endblock %}</title>
+</head>
+<body>
+{% block header %}
+<header>
+  <h1>Магазин</h1>
+</header>
+{% endblock %}
+
+{% block menu %}
+<nav>
+  <ul>
+    <li><a href="{{ url_for('main') }}">Главная</a></li>
+    <li><a href="{{ url_for('clothes') }}">Одежда</a></li>
+    <li><a href="{{ url_for('shoes') }}">Обувь</a></li>
+    <li><a href="{{ url_for('jackets') }}">Куртки</a></li>
+  </ul>
+</nav>
+{% endblock %}
+
+{% block content %}
+<h2>Лучший магазин в интернете!</h2>
+{% endblock %}
+
+{% block footer %}
+<footer>
+  <p>2024 Магазин. Все права защищены.&copy;</p>
+</footer>
+{% endblock %}
+
+
+</body>
+</html>
