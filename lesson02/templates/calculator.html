@@ -1,0 +1,27 @@
+{% extends 'base.html '%}
+
+{% block title %}
+{{super()}} - {{'task05'}}
+{% endblock %}
+
+{% block header %}
+        <h1>Calculator</h1>
+{% endblock %}
+
+{% block content %}
+    <div>
+        <form method="post" enctype="multipart/form-data">
+            <label><h3>Калькулятор</h3></label><br>
+            <label for="Введите число">Введите число</label>
+            <input type="number" name="num1"><br>
+            <label for="Выберите операцию">Выберите операцию</label><br>
+            <input type="checkbox" name="operation" value="+"><label for="">+</label><br>
+            <input type="checkbox" name="operation" value="-"><label for="">-</label><br>
+            <input type="checkbox" name="operation" value="*"><label for="">*</label><br>
+            <input type="checkbox" name="operation" value="/"><label for="">/</label><br>
+            <label for="Введите число">Введите число</label>
+            <input type="number" name="num2"><br>
+            <input type="submit" value="Подсчитать">
+        </form>
+    </div>
+{% endblock %}

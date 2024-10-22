@@ -1,0 +1,17 @@
+{% extends 'base.html '%}
+
+{% block title %}
+    {{super()}} - {{'task01'}}
+{% endblock %}
+
+{% block header %}
+        <h1>Button</h1>
+{% endblock %}
+
+{% block content %}
+    <div>
+        <button>
+            <a href="{{ url_for('hello') }}">PushMe</a>
+        </button>
+    </div>
+{% endblock %}

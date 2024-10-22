@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{super()}} - {{ 'task06' }}
+{% endblock %}
+
+{% block header %}
+    <h1>Проверка возраста</h1>
+{% endblock %}
+
+{% block content %}
+    <div>
+        <p>Добро пожаловать {{ name }} вам {{ age }} лет.</p>
+    </div>
+{% endblock %}

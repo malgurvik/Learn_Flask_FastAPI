@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{super()}} - {{ 'task06' }}
+{% endblock %}
+
+{% block header %}
+    <h1>Проверка возраста</h1>
+{% endblock %}
+
+{% block content %}
+    <div>
+        <form method="post">
+            <label>Введите имя</label>
+            <input type="text" name="name"><br>
+            <label >Введите ваш возраст</label>
+            <input type="number" name="age"><br>
+            <input type="submit" value="Проверить">
+        </form>
+    </div>
+{% endblock %}
+

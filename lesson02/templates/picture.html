@@ -1,0 +1,16 @@
+{% extends 'base.html '%}
+
+{% block title %}
+{{super()}} - {{'task02'}}
+{% endblock %}
+
+{% block header %}
+        <h1>Picture</h1>
+{% endblock %}
+
+{% block content %}
+    <div>
+        <img src="../static/img/bugatti-centodieci-696x392.jpg" alt="Pic">
+        <button><a href="{{ url_for('upload_pic')}}">Загрузить изображение</a></button>
+    </div>
+{% endblock %}

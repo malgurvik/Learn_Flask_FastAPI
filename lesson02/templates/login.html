@@ -1,0 +1,22 @@
+{% extends 'base.html '%}
+
+{% block title %}
+{{super()}} - {{'task03'}}
+{% endblock %}
+
+{% block header %}
+        <h1>Log in</h1>
+{% endblock %}
+
+{% block content %}
+    <div>
+        <form method="post" enctype="multipart/form-data">
+            <label>Регистрация</label><br>
+            <label for="Username"></label><input type="text" name="name" id="Username" placeholder="Имя"><br>
+            <label>
+                <input type="password" name="password" placeholder="Пароль">
+            </label><br>
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html '%}
+
+{% block title %}
+{{super()}} - {{'task09'}}
+{% endblock %}
+
+{% block header %}
+        <h1>Log in</h1>
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h2>Добро пожаловать {{ name }}</h2>
+        <a href="{{ url_for('logout') }}"><button>Выйти</button></a>
+    </div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html '%}
+
+{% block title %}
+{{super()}} - {{'task04'}}
+{% endblock %}
+
+{% block header %}
+        <h1>Count words</h1>
+{% endblock %}
+
+{% block content %}
+    <div>
+        <form method="post" enctype="multipart/form-data">
+            <label>Подсчет количества слов</label><br>
+            <label for="Введите текст"></label><input type="text" name="text"><br>
+            <input type="submit" value="Подсчитать">
+        </form>
+    </div>
+{% endblock %}

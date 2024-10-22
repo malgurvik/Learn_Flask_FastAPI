@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{super()}} - {{ 'task07' }}
+{% endblock %}
+
+{% block header %}
+    <h1>Результат</h1>
+{% endblock %}
+
+{% block content %}
+    <div>
+        <p>Квадрат числа {{ number }} равен: {{ res }}</p>
+    </div>
+{% endblock %}

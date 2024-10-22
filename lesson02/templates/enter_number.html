@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{super()}} - {{ 'task07' }}
+{% endblock %}
+
+{% block header %}
+    <h1>Квадрат числа</h1>
+{% endblock %}
+
+{% block content %}
+    <div>
+        <form method="post">
+            <label>Введите число</label>
+            <input type="number" name="number"><br>
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+{% endblock %}
