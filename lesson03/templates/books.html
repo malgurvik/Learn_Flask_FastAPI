@@ -1,0 +1,28 @@
+{% extends 'base.html '%}
+
+{% block title %}
+{{super()}} - {{'task02'}}
+{% endblock %}
+
+{% block header %}
+        <h1>Books</h1>
+{% endblock %}
+
+{% block content %}
+    {% if books %}
+    <table>
+        {% for book in books %}
+        <tr>
+            <td>{{ book.id }}</td>
+            <td>{{ book.book_title }}</td>
+            <td>{{ book.year_of_publication }}</td>
+            <td>{{ book.number_of_copies }}</td>
+            <td>{{ book.author.first_name }}</td>            
+            <td>{{ book.author.second_name }}</td>            
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <h2>Книг нету</h2>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Lesson 3{% endblock %}</title>
+</head>
+<body>
+    {% block header %}
+        <header><h1>Lesson 3</h1></header>
+    {% endblock %}
+
+    {% block menu %}
+        <nav>
+            <a href="{{url_for('redirect_to_index')}}">Home</a>
+        </nav>
+    {% endblock %}
+    
+    {% block content %}
+         <p>Main page</p>
+    {% endblock %}
+
+</body>
+</html>

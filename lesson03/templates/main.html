@@ -1,0 +1,15 @@
+{% extends 'base.html '%}
+
+{% block title %}
+{{super()}} - {{'task03'}}
+{% endblock %}
+
+{% block header %}
+        <h1>Main Page</h1>
+{% endblock %}
+
+{% block content %}
+    <h2>Welcome to my website!</h2>
+    <a href="{{ url_for('login') }}"><button>Login</button></a>          
+    <a href="{{ url_for('registration') }}"><button>Registration</button></a>          
+{% endblock %}
